@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payoo</title>
+    <!-- daisyui -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="shortcut icon" href="./payoo.png" type="image/x-icon" />
+    <!-- tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
+    <!-- font awesome -->
+    <script
+      src="https://kit.fontawesome.com/374ce514ab.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .font-outfit {
+        font-family: "Outfit", sans-serif;
+      }
+    </style>
+  </head>
+  <body class="font-outfit container mx=auto">
+    <header></header>
+    <main class="flex justify-center my-6">
+      <div class="mockup-phone shadow-xl shadow-gray-400">
+        <div class="camera"></div>
+        <div class="display">
+          <div class="artboard phone-4 bg-gray-100">
+            <div class="px-6 py-10">
+              <div class="stats shadow flex items-center">
+                <div class="w-2/4">
+                  <img src="./payoo.png" alt="" class="p-3 mx-auto" />
+                </div>
+                <div class="stat">
+                  <div class="stat-title">Available Balance</div>
+                  <div class="stat-value" id="Balance">89,400</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="px-6 space-x-3 flex justify-center">
+              <div class="stats shadow">
+                <div class="stat hover:cursor-pointer hover:bg-slate-200">
+                  <div
+                    class="font-bold text-xl "
+                    id="add-money"
+                  >
+                    Add Money
+                  </div>
+                </div>
+              </div>
+              <div class="stats shadow">
+                <div class="stat hover:cursor-pointer hover:bg-slate-200">
+                  <div class="font-bold text-xl" id="cash-out">Cash Out</div>
+                </div>
+              </div>
+            </div>
+            <div class="px-6 space-x-3 flex justify-center py-8">
+              <div class="stats shadow">
+                <div class="stat">
+                  <div class="font-bold text-xl" id="add-money">Pay Bill</div>
+                </div>
+              </div>
+              <div class="stats shadow">
+                <div class="stat">
+                  <div class="font-bold text-xl" id="cash-out">Transaction</div>
+                </div>
+              </div>
+            </div>
+            <div class="my-10 p-6">
+              <img src="./home.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer></footer>
+    <script src="./home.js"></script>
+  </body>
+</html>
